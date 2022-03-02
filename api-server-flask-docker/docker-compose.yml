@@ -1,0 +1,9 @@
+version: '3'
+services:
+  api-server-flask:
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: ./
+    ports:
+      - "5000:5000"
